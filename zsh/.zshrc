@@ -177,9 +177,12 @@ alias synctime='sudo ntpd -s -d'
 alias sc='sc-im'
 alias aa='alsamixer -c 1'
 alias as='alsamixer -c 0'
+alias rmta='xfreerdp ~/Downloads/*.rdp /smart-sizing /sound /microphone:sys:alsa -grab-keyboard'
 alias rmt='xfreerdp ~/Downloads/*.rdp /smart-sizing -grab-keyboard'
 alias hwifi='connmanctl connect wifi_0028f81eadde_5465616375705069672d20322e3447_managed_psk'
 alias vim='nvim'
+alias gitpushall='git add * && git commit -m "update" && git push -u origin master'
+
 ## xbps
 #alias xup='sudo xbps-install -Syu && sudo xbps-remove -Ooy'
 #alias xi='sudo xbps-install'
