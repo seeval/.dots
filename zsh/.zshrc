@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH=$HOME/.oh-my-zsh
+export ZSH=$HOME/.config/.oh-my-zsh
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -28,7 +28,7 @@ ZSH_THEME="kardan"
 # DISABLE_AUTO_UPDATE="true"
 
 # Uncomment the following line to automatically update without prompting.
-# DISABLE_UPDATE_PROMPT="true"
+DISABLE_UPDATE_PROMPT="true"
 
 # Uncomment the following line to change how often to auto-update (in days).
 # export UPDATE_ZSH_DAYS=13
@@ -153,33 +153,31 @@ bindkey '^H' backward-kill-word                                 # delete previou
 bindkey '^[[Z' undo                                             # Shift+tab undo last action
 
 ## Alias section 
-alias cp="cp -i"                                                # Confirm before overwriting something
+
 alias df='df -h'                                                # Human-readable sizes
-alias free='free -m'                                            # Show sizes in MB
 alias lsa='ls -a'
 alias lsl='ls -l'
 alias q= 'exit'
 alias h='history'
-alias p='cat'
-alias pd='pwd'
-alias t='time'
 alias null='/dev/null'
-alias shut='sudo poweroff'
 alias rma='rm *'
+
 alias raise='xbacklight -inc 2'
 alias lwr='xbacklight -dec 2'
 alias night='xbacklight -dec 6'
 alias sleep='sudo ZZZ'
+
 alias ck='date && acpi'
-alias tap='sudo xinput --set-prop 14 306 1'
-alias scroll='sudo xinput --set-prop 14 328 1'
 alias synctime='sudo ntpd -s -d'
+
 alias sc='sc-im'
 alias aa='alsamixer -c 1'
 alias as='alsamixer -c 0'
+
 alias rmta='xfreerdp ~/Downloads/*.rdp /smart-sizing /sound /microphone:sys:alsa -grab-keyboard'
 alias rmt='xfreerdp ~/Downloads/*.rdp /smart-sizing -grab-keyboard'
 alias hwifi='connmanctl connect wifi_0028f81eadde_5465616375705069672d20322e3447_managed_psk'
+
 alias vim='nvim'
 alias gitpushall='git add * && git commit -m "update" && git push -u origin master'
 
@@ -194,11 +192,9 @@ alias yin='yay -S --noconfirm'
 
 ## directories
 alias home='cd ~'
-alias dtop='cd ~/Desktop'
 alias personal='cd ~/Documents/personal'
 alias work='cd ~/Documents/work'
 alias dl='cd ~/Downloads'
-alias o='open'
 alias ..='cd ..'
 alias ...='cd ..; cd ..'
 alias ....='cd ..; cd ..; cd ..;'
