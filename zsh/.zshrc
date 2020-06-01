@@ -166,6 +166,7 @@ alias raise='xbacklight -inc 2'
 alias lwr='xbacklight -dec 2'
 alias night='xbacklight -dec 6'
 alias sleep='sudo ZZZ'
+alias beep='sudo rmmod pcspkr'
 
 alias ck='date && acpi'
 alias synctime='sudo ntpd -s -d'
@@ -174,8 +175,8 @@ alias sc='sc-im'
 alias aa='alsamixer -c 1'
 alias as='alsamixer -c 0'
 
-alias rmta='xfreerdp ~/Downloads/*.rdp /smart-sizing /sound /microphone:sys:alsa -grab-keyboard'
-alias rmt='xfreerdp ~/Downloads/*.rdp /smart-sizing -grab-keyboard'
+alias rmta='nohup xfreerdp ~/Downloads/*.rdp /smart-sizing /sound /microphone:sys:alsa -grab-keyboard > /dev/zero &'
+alias rmt='nohup xfreerdp ~/Downloads/*.rdp /smart-sizing -grab-keyboard > /dev/zero &'
 alias hwifi='connmanctl connect wifi_0028f81eadde_5465616375705069672d20322e3447_managed_psk'
 
 alias vim='nvim'
