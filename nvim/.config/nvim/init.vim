@@ -34,10 +34,10 @@ Plugin 'VundleVim/Vundle.vim'
 
 "============================
 "
-"
+Plugin 'tpope/vim-surround'
 Plugin 'preservim/nerdtree'
 Plugin 'itchyny/lightline.vim'
-"
+Plugin 'junegunn/fzf.vim'
 "
 "============================
 
