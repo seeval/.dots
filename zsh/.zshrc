@@ -179,7 +179,7 @@ alias rmta='nohup xfreerdp ~/Downloads/*.rdp /smart-sizing /sound /microphone:sy
 alias rmt='nohup xfreerdp ~/Downloads/*.rdp /smart-sizing -grab-keyboard > /dev/zero &'
 alias hwifi='connmanctl connect wifi_0028f81eadde_5465616375705069672d20322e3447_managed_psk'
 
-alias vim='nvim'
+alias v='nvim'
 alias gitpushall='git add * && git commit -m "update" && git push -u origin master'
 
 ## xbps

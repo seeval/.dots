@@ -12,10 +12,10 @@ set smartcase
 set noswapfile
 set relativenumber
 set incsearch
-
+set shortmess=I
 
 "maps
-map <C-o> : NERDTreeToggle<CR>
+map <C-t> : NERDTreeToggle<CR>
 
 
 "lightline colorscheme
