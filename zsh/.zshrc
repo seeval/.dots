@@ -10,7 +10,6 @@ export ZSH=$HOME/.config/.oh-my-zsh
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="kardan"
 
-
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in ~/.oh-my-zsh/themes/
@@ -63,12 +62,7 @@ DISABLE_UPDATE_PROMPT="true"
 
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
-
-# Which plugins would you like to load?
-# Standard plugins can be found in ~/.oh-my-zsh/plugins/*
-# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-# Add wisely, as too many plugins slow down shell startup.
 plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
@@ -94,10 +88,6 @@ source $ZSH/oh-my-zsh.sh
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
-#
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
 ## Options section
 setopt correct                                                  # Auto correct mistakes
 setopt extendedglob                                             # Extended globbing. Allows using regular expressions with *
@@ -123,7 +113,6 @@ SAVEHIST=500
 #export EDITOR=/usr/bin/nano
 #export VISUAL=/usr/bin/nano
 WORDCHARS=${WORDCHARS//\/[&.;]}                                 # Don't consider certain characters part of the word
-
 
 ## Keybindings section
 bindkey -e
@@ -153,34 +142,27 @@ bindkey '^H' backward-kill-word                                 # delete previou
 bindkey '^[[Z' undo                                             # Shift+tab undo last action
 
 ## Alias section 
-
 alias df='df -h'                                                # Human-readable sizes
 alias lsa='ls -a'
 alias lsl='ls -l'
-alias q= 'exit'
 alias h='history'
 alias null='/dev/null'
 alias rma='rm *'
-
 alias raise='xbacklight -inc 2'
 alias lwr='xbacklight -dec 2'
 alias night='xbacklight -dec 6'
-alias sleep='sudo ZZZ'
 alias beep='sudo rmmod pcspkr'
-
 alias ck='date && acpi'
 alias synctime='sudo ntpd -s -d'
-
-alias sc='sc-im'
 alias aa='alsamixer -c 1'
 alias as='alsamixer -c 0'
-
 alias rmta='nohup xfreerdp ~/Downloads/*.rdp /smart-sizing /sound /microphone:sys:alsa -grab-keyboard > /dev/zero &'
 alias rmt='nohup xfreerdp ~/Downloads/*.rdp /smart-sizing -grab-keyboard > /dev/zero &'
 alias hwifi='connmanctl connect wifi_0028f81eadde_5465616375705069672d20322e3447_managed_psk'
-
 alias v='nvim'
 alias gitpushall='git add * && git commit -m "update" && git push -u origin master'
+alias cookie='cookiecutter https://github.com/drivendata/cookiecutter-data-science'
+alias weth='curl -q wttr.in/north+bethesda'
 
 ## xbps
 #alias xup='sudo xbps-install -Syu && sudo xbps-remove -Ooy'
@@ -206,7 +188,7 @@ alias mountusb='sudo mount /dev/sda1 /mnt/ && cd /mnt'
 ## path
 #export PATH=$PATH:~/.config/Exodus/Exodus-linux-x64
 export PATH=$PATH:~/.local/bin
-alias asound='sudo vim /etc/asound.conf'
+alias asound='sudo nvim /etc/asound.conf'
 
 ## reroute compinit
 compinit -d ~/.cache/zsh/zcompdump-$ZSH_VERSION
