@@ -164,6 +164,10 @@ alias gitpushall='git add * && git commit -m "update" && git push -u origin mast
 alias cookie='cookiecutter https://github.com/drivendata/cookiecutter-data-science'
 alias weth='curl -q wttr.in/north+bethesda'
 
+## devour aliases
+alias devimg='devour sxiv'
+alias devpdf='devour zathura'
+
 ## xbps
 #alias xup='sudo xbps-install -Syu && sudo xbps-remove -Ooy'
 #alias xi='sudo xbps-install'
