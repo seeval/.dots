@@ -165,8 +165,9 @@ alias cookie='cookiecutter https://github.com/drivendata/cookiecutter-data-scien
 alias weth='curl -q wttr.in/north+bethesda'
 
 ## devour aliases
-alias devimg='devour sxiv'
-alias devpdf='devour zathura'
+alias sxiv='devour sxiv'
+alias zathura='devour zathura'
+alias mpv='devour mpv'
 
 ## xbps
 #alias xup='sudo xbps-install -Syu && sudo xbps-remove -Ooy'
