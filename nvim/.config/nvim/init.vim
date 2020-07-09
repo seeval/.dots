@@ -13,6 +13,7 @@ set noswapfile
 set relativenumber
 set incsearch
 set shortmess=I
+set encoding=utf-8
 
 "maps
 map <C-t> : NERDTreeToggle<CR>
