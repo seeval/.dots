@@ -168,6 +168,7 @@ alias weth='curl -q wttr.in/north+bethesda'
 alias sxiv='devour sxiv'
 alias zathura='devour zathura'
 alias mpv='devour mpv'
+alias pavucontrol='devour pavucontrol'
 
 ## xbps
 #alias xup='sudo xbps-install -Syu && sudo xbps-remove -Ooy'
