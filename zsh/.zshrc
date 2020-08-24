@@ -158,11 +158,12 @@ alias aa='alsamixer -c 1'
 alias as='alsamixer -c 0'
 alias rmta='nohup xfreerdp ~/Downloads/*.rdp /smart-sizing /sound /microphone:sys:alsa -grab-keyboard > /dev/zero &'
 alias rmt='nohup xfreerdp ~/Downloads/*.rdp /smart-sizing -grab-keyboard > /dev/zero &'
-alias hwifi='connmanctl connect wifi_0028f81eadde_5465616375705069672d20322e3447_managed_psk'
+alias hwifi='connmanctl connect wifi_0028f81eadde_546561637570506967_managed_psk'
 alias v='nvim'
 alias gitpushall='git add * && git commit -m "update" && git push -u origin master'
 alias cookie='cookiecutter https://github.com/drivendata/cookiecutter-data-science'
 alias weth='curl -q wttr.in/north+bethesda'
+alias nb='newsboat'
 
 ## devour aliases
 alias sxiv='devour sxiv'
