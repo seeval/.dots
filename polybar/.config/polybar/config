@@ -330,18 +330,18 @@ border-size = 0
 ;border-bottom-size = 25
 border-color = #00000000
 
-padding-left = 1
-padding-right = 1
+padding-left = 0
+padding-right = 0
 
 module-margin-left = 0
 module-margin-right = 0
 
 ;https://github.com/jaagr/polybar/wiki/Fonts
-font-0 = "UbuntuMono Nerd Font:size=12;2"
+font-0 = "UbuntuMono Nerd Font:size=13;2"
 font-1 = "UbuntuMono Nerd Font:size=16;3"
-font-2 = "Font Awesome 5 Free:style=Regular:pixelsize=8;1"
-font-3 = "Font Awesome 5 Free:style=Solid:pixelsize=8;1"
-font-4 = "Font Awesome 5 Brands:pixelsize=8;1"
+font-2 = "Font Awesome 5 Free:style=Regular:pixelsize=9;1"
+font-3 = "Font Awesome 5 Free:style=Solid:pixelsize=9;1"
+font-4 = "Font Awesome 5 Brands:pixelsize=9;1"
 
 modules-left = bspwm xwindow
 modules-center = 
@@ -872,15 +872,19 @@ battery = BAT0
 adapter = AC0
 full-at = 100
 
-format-charging = <animation-charging> <label-charging>
-label-charging = "  %percentage%%"
+format-charging-prefix = "   "
+format-charging = <label-charging>
+;format-charging = <animation-charging> <label-charging>
+label-charging = " %percentage%%"
 label-charging-foreground = #fefefe
 label-charging-background = #668bd7
 format-charging-foreground = #fefefe
 format-charging-background = #668bd7
 ;format-charging-underline = #a3c725
 
-format-discharging = <ramp-capacity> <label-discharging>
+format-discharging-prefix = "   "
+format-discharging = <label-discharging>
+;format-discharging = <ramp-capacity> <label-discharging>
 label-discharging = " %percentage%%"
 label-discharging-foreground = #fefefe
 label-discharging-background = #668bd7
@@ -888,7 +892,7 @@ label-discharging-background = #668bd7
 format-discharging-foreground = #fefefe
 format-discharging-background = #668bd7
 
-format-full-prefix = "  "
+format-full-prefix = "   "
 format-full-prefix-foreground = #fefefe
 ;format-full-underline = #a3c725
 format-full-foreground = #fefefe
@@ -986,7 +990,7 @@ type = internal/cpu
 interval = 1
 format-foreground = #fefefe
 format-background = #8d62ad
-format-prefix = "  "
+format-prefix = "   "
 format-prefix-foreground = #fefefe
 
 label-font = 1
@@ -1003,7 +1007,7 @@ format = <label>
 ;   %percentage% (default) - total cpu load
 ;   %percentage-cores% - load percentage for each core
 ;   %percentage-core[1-9]% - load percentage for specific core
-label = CPU %percentage:3%%
+label = CPU%percentage:3%%
 
 ################################################################################
 
@@ -1022,7 +1026,7 @@ format-prefix = "  "
 format-prefix-foreground = #fefefe
 format-foreground = #fefefe
 format-background = #668bd7
-label = "%date% |%time% "
+label = "%date% | %time% "
 
 #################################################################
 
@@ -1555,7 +1559,7 @@ format-connected = <label-connected>
 ;format-connected = <ramp-signal> <label-connected>
 format-connected-foreground = #fefefe
 format-connected-background = #8d62ad
-format-connected-prefix = "  "
+format-connected-prefix = "   "
 format-connected-prefix-foreground = #fefefe
 format-connected-prefix-background = #8d62ad
 ;format-connected-underline = #fefefe

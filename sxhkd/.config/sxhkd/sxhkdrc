@@ -21,7 +21,7 @@ super + p
 #
 
 # make sxhkd reload its configuration files:
-super + Escape
+super + shift + r
 	pkill -USR1 -x sxhkd
 
 # volume up
@@ -38,11 +38,11 @@ XF86AudioMute
 
 # raise brightness
 XF86MonBrightnessUp
-    xbacklight +5
+    xbacklight +10
 
 # lower brightness
 XF86MonBrightnessDown
-    xbacklight -5
+    xbacklight -10
 
 
 
