@@ -13,7 +13,9 @@ super + alt + o
 
 # program launcher
 super + p
-	dmenu_run
+	dmenu_run 
+
+#-fn "Ubuntu Mono Nerd Font-12" -nb "#282c34" -nf "abb2bf"
 
 
 #
@@ -38,11 +40,11 @@ XF86AudioMute
 
 # raise brightness
 XF86MonBrightnessUp
-    xbacklight +10
+    xbacklight +8   
 
 # lower brightness
 XF86MonBrightnessDown
-    xbacklight -10
+    xbacklight -8
 
 
 
