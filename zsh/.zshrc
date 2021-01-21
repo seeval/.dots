@@ -151,7 +151,6 @@ alias rma='rm *'
 alias raise='xbacklight -inc 2'
 alias lwr='xbacklight -dec 2'
 alias night='xbacklight -dec 6'
-alias beep='sudo rmmod pcspkr'
 alias ck='date && acpi'
 alias synctime='sudo ntpd -s -d'
 alias aa='alsamixer -c 1'
@@ -164,7 +163,13 @@ alias v='nvim'
 alias gitpushall='git add * && git commit -m "update" && git push -u origin master'
 alias cookie='cookiecutter https://github.com/drivendata/cookiecutter-data-science'
 alias weth='curl -q wttr.in/north+bethesda'
-alias nb='newsboat'
+
+#startup
+alias beep='sudo rmmod pcspkr'
+alias cpfreq='sudo cpupower frequency-set -g performance'
+alias tap='xinput set-prop "Synaptics TM3257-001" "libinput Tapping Enabled" 1'
+alias scroll='xinput set-prop "Synaptics TM3257-001" "libinput Natural Scrolling Enabled" 1'
+
 
 ## devour aliases
 alias sxiv='devour sxiv'
