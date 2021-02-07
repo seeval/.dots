@@ -5,7 +5,7 @@
 
 # terminal emulator
 super + Return 
-	termite
+	alacritty
 
 # firefox
 super + alt + o
@@ -13,7 +13,7 @@ super + alt + o
 
 # program launcher
 super + p
-	dmenu_run -nf '#d8dee9' -nb '#434c5e' -sf '#e5e9f0' -sb '#3b4252' 
+	dmenu_run -fn "Ubuntu Mono Nerd Font" -nf '#d8dee9' -nb '#434c5e' -sf '#e5e9f0' -sb '#3b4252' 
 
 #-fn "Ubuntu Mono Nerd Font-12" -nb "#282c34" -nf "abb2bf"
 
@@ -28,11 +28,11 @@ super + shift + r
 
 # volume up
 XF86AudioRaiseVolume
-    amixer set Master 5%+
+    amixer set Headset 5%+
 
 # volume down
 XF86AudioLowerVolume
-    amixer set Master 5%-
+    amixer set Headset 5%-
 
 # volume mute
 XF86AudioMute

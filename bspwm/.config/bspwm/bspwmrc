@@ -4,7 +4,7 @@
 
 sxhkd &
 picom &
-feh --bg-fill ~/.config/.walls/mntn.jpg &
+feh --bg-fill ~/.config/.walls/nord.png &
 ~/.config/polybar/launch.sh &
 setxkbmap -option caps:swapescape &
 

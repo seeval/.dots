@@ -26,21 +26,21 @@ let g:lightline = {
 
 
 " plugins
-set nocompatible
-filetype off
+"set nocompatible
+"filetype off
 
-set rtp+=~/.config/nvim/bundle/Vundle.vim
-call vundle#begin()
-Plugin 'VundleVim/Vundle.vim'
+"set rtp+=~/.config/nvim/bundle/Vundle.vim
+"call vundle#begin()
+"Plugin 'VundleVim/Vundle.vim'
 
 "============================
 "
-Plugin 'tpope/vim-surround'
-Plugin 'preservim/nerdtree'
-Plugin 'itchyny/lightline.vim'
-Plugin 'junegunn/fzf.vim'
+"Plugin 'tpope/vim-surround'
+"Plugin 'preservim/nerdtree'
+"Plugin 'itchyny/lightline.vim'
+"Plugin 'junegunn/fzf.vim'
 "
 "============================
 
-call vundle#end()
-filetype plugin indent on
+"call vundle#end()
+"filetype plugin indent on
