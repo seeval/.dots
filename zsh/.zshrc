@@ -189,6 +189,9 @@ alias pavucontrol='devour pavucontrol'
 #alias xi='sudo xbps-install'
 #alias xr='sudo xbps-remove'
 
+## pacman
+alias pacup='sudo pacman -Syu'
+
 ## yay
 alias yup='yay -Syu --noconfirm && yay -Yc --noconfirm'
 alias yin='yay -S --noconfirm'
