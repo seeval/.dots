@@ -193,8 +193,8 @@ alias pavucontrol='devour pavucontrol'
 alias pacup='sudo pacman -Syu'
 
 ## yay
-alias yup='yay -Syu --noconfirm && yay -Yc --noconfirm'
-alias yin='yay -S --noconfirm'
+alias yup='yay -Syu && yay -Yc'
+alias yin='yay -S'
 
 ## directories
 alias home='cd ~'
