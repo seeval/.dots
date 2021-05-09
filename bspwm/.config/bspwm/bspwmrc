@@ -4,8 +4,8 @@
 
 sxhkd &
 picom &
-feh --bg-fill ~/.config/.walls/nord_arch.png &
-~/.config/polybar/launch.sh &
+feh --bg-fill ~/.config/.walls/mantissa_void_xtra_dark.jpg &
+~/.config/polybar/grayblocks/launch.sh &
 setxkbmap -option caps:swapescape &
 
 bspc monitor -d 1 2 3 4 5 
@@ -30,9 +30,9 @@ bspc config borderless_monocle          true
 bspc config gapless_monocle             true
 
 #### colors ####
-bspc config normal_border_color		    "#3b4252" 
-bspc config active_border_color	        "#282c34" 
-bspc config focused_border_color	    "#282c34"
+bspc config normal_border_color		    "#272727" 
+bspc config active_border_color	        "#383838" 
+bspc config focused_border_color	    "#383838"
 
 
 #polybar hidden for vlc, youtube, mpv, etc
