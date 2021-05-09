@@ -177,6 +177,7 @@ alias cpfreq='sudo cpupower frequency-set -g performance'
 alias tap='xinput set-prop "Synaptics TM3257-001" "libinput Tapping Enabled" 1'
 alias scroll='xinput set-prop "Synaptics TM3257-001" "libinput Natural Scrolling Enabled" 1'
 
+alias startrun='sudo cpupower frequency-set -g performance && xinput set-prop "Synaptics TM3257-001" "libinput Tapping Enabled" 1 && xinput set-prop "Synaptics TM3257-001" "libinput Natural Scrolling Enabled" 1 && lxappearance'
 
 ## devour aliases
 alias sxiv='devour sxiv'
