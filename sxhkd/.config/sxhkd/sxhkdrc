@@ -13,10 +13,9 @@ super + alt + o
 
 # program launcher
 super + p
-	dmenu_run -fn "Ubuntu Mono Nerd Font:pixelsize=18" -nf '#d8dee9' -nb '#434c5e' -sf '#e5e9f0' -sb '#3b4252' 
+	dmenu_run -fn "UbuntuMono Nerd Font:pixelsize=24" -nf '#CACACA' -nb '#272727' -sf '#CACACA' -sb '#383838' 
 
 #-fn "Ubuntu Mono Nerd Font-12" -nb "#282c34" -nf "abb2bf"
-
 
 #
 # system keys
