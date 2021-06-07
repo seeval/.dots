@@ -27,15 +27,15 @@ super + shift + r
 
 # volume up
 XF86AudioRaiseVolume
-    amixer set Headphone 3%+
+    amixer set Headset 5%+
 
 # volume down
 XF86AudioLowerVolume
-    amixer set Headphone 3%-
+    amixer set Headset 5%-
 
 # volume mute
 XF86AudioMute
-    amixer set Headphone toggle
+    amixer set Headset toggle
 
 # raise brightness
 XF86MonBrightnessUp
